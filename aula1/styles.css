@@ -1,33 +1,49 @@
 body{
     background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    margin: 0;
+    padding: 20px;
 }
 
 h1 {
     color: brown;
     text-align: center;
-    font-family: Arial;
+    margin-bottom: 20px;
 }
 
 .container {
     align-items: center;
     padding: 10px;
+    margin: 0 auto;
 }
 
 img{
-    display: flex;
-    margin: auto;
+    display: block;
+    margin: 0 auto 20px;
     width: 35%;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .rounded-box {
     justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px auto;
+    box-sizing: border-box;
     border: 2px solid #5c4436;
     border-radius: 15px;
-    padding: 12px;
     align-items: center;
     color: brown;
+    text-align: left;
+  }
+
+  .rounded-box h2 {
     text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
   }
 
   p {
@@ -61,6 +77,11 @@ img{
         color: brown;
       }
 
-      ol {
-        text-decoration: none;
+    ul {
+    padding-left: 60px;
+    list-style-position: inside;
       }
+
+    li {
+    margin-bottom: 8px;
+    }
