@@ -61,6 +61,9 @@ switch (diaSemana)
     case 2:
         console.log("Segunda")
         break;
+    case 3:
+        console.log("Terça")
+        break;
     default:
         console.log("Escolha uma opção")
  }
