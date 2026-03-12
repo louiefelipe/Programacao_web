@@ -1,7 +1,20 @@
-.h2 {
-    border-style: solid;
-    border-color: rgb(64, 63, 63);
-    
+body{
+    background-color: rgb(231, 231, 231);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    justify-content: center;
+    width: 50%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 40px auto;
+    border: 2px solid #1e7ca1;
+    border-radius: 25px;
+    align-items: center;
+    text-align: center;
 }
 
 .formulario {
