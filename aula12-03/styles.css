@@ -1,23 +1,97 @@
-body{
-    background-color: rgb(231, 231, 231);
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    box-sizing: border-box;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-h2 {
+body{
+    background-color: rgb(30, 32, 51);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
     justify-content: center;
-    width: 50%;
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 40px auto;
-    border: 2px solid #1e7ca1;
-    border-radius: 25px;
     align-items: center;
-    text-align: center;
 }
 
-.formulario {
-    align-content: center;
+.container {
+    background-color:rgb(255, 255, 255);
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 3px 5px rgba(0,0,0, 0.5);
+    overflow: hidden;
+}
 
+#area{
+    background: linear-gradient(360deg, #1b204b 0%, #59a1bd 100%);
+    padding: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.form {
+    padding: 30px;
+
+}
+
+.form-content {
+    margin-bottom: 0;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.form-content label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-content input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid #2b5d96ab;
+}
+
+.form-content a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button{
+    background-color: #1b416d;
+    color: #fff;
+    width: 100%;
+    border-radius: 14px;
+    padding: 15px;
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form-content.error input{
+    border-color: firebrick;
+}
+
+.form-content.error a{
+    color: firebrick;
+    visibility: visible;
+}
+
+.button{
+    background-color: #811c1c;
+    color: #fff;
+    width: 40%;
+    border-radius: 14px;
+    padding: 18px;
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: right;
 }
