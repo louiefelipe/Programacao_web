@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-cad.css">
     <title>Sistema de Vendas</title>
 </head>
 
@@ -12,23 +12,59 @@
         <h1>Cadastro de Vendas</h1>
     </div>
 
-    <div class="form">
-        <label for="nome"></label>
-        <input type="text" id="nome" placeholder="Nome do Vendedor...">
-        <label for="number"></label>
-        <input for="number" id="valor" placeholder="Valor da Venda" step="any">
-    </div>
+    <div class="form-container">
+        <div class="form">
 
+            <div class="input-block" id="group-name">
+            <input type="text" 
+            id="nome" 
+            placeholder="Nome do Vendedor">
     
-        <!-- Botão cadastro -->
-    <div class="button-group">
-        <button class="btn-cad" onclick="cadastrar()">Cadastrar</button>
+                <span class="error-msg">Digite um nome válido</span>
+            </div>
+    
+            <div class="input-block" id="group-valor">
+            <input type="number" id="valor" placeholder="Valor da Venda" step="0.01">
+           
+                <span class="error-msg">Digite um valor válido</span>
+            </div>
+
+            <div class="button-group">
+            <button class="btn-cad" onclick="cadastrar()">Cadastrar</button>
+
+            </div>
+        </div>
+
+        <!-- Botões de controle extra -->
+    <div class="extra-controls" id="controles-globais">
+        <button class="btn-limpar" onclick="limparTudo()">Limpar Tabela</button>
+
+        </div>
+    </div>
+    
+        <!-- Tabela -->
+        <h2>Lista de Vendas</h2>
+    <div class="lista-container">
+
+        <table id="tabelaLista" border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Vendedor</th>
+            <th>Valor</th>
+            <th>Desconto</th>
+            <th>Valor Final</th>
+            <th>Data</th>
+            <th>Ações</th>
+        </tr>
+
+    </thead>
+    <tbody id="corpoTabela"></tbody>
+</table>
+
     </div>
 
-        <!-- Tabela -->
-    <div class="lista-container">
-        <div class="titulo"></div>
-    </div>
+    <script src="sis_cad.js"></script>
     
 </body>
 </html>
